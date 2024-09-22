@@ -31,5 +31,3 @@ function merge(left,right,result=[]){
     return merge(left,right,result);
 }
 
-let arr=[0,3,5,10,1];
-console.log(mergeSort(arr))

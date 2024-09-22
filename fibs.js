@@ -16,12 +16,10 @@ function fibs(n){
 }
 
 function fibsRec(n, sequence=[0,1]){
-    console.log("This was printed recursively")
+    console.log("This was printed recursively");
     if(n<=2) return sequence;
     else if (n===1) return [0];
 
     sequence.push(sequence[sequence.length-1]+sequence[sequence.length-2]);
     return fibsRec(n-1,sequence);
 }
-
-console.log(fibsRec(8));
